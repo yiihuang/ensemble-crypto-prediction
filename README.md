@@ -18,6 +18,67 @@ The implementation includes rigorous hyperparameter tuning, feature importance a
 
 Beyond the predictive models themselves, this repository serves as a comprehensive tutorial on implementing ensemble learning techniques in Python, with visualizations that explain the core concepts behind different ensemble approaches.
 
+## 📈 Model Performance Visualizations
+
+The following visualizations demonstrate how well each ensemble method performs in predicting Bitcoin prices. These plots show the true BTC prices (blue line) versus the predicted prices (dashed lines) over time, allowing you to visually assess the accuracy and performance of each ensemble approach.
+
+### Random Forest Predictions
+![Random Forest BTC Price Predictions](output/prediction/random_forest.png)
+
+Random Forest uses bagging to create multiple decision trees and combines their predictions through averaging. This method is particularly effective at handling non-linear relationships in financial data.
+
+### AdaBoost Predictions
+![AdaBoost BTC Price Predictions](output/prediction/adaboost.png)
+
+AdaBoost sequentially builds models by focusing on previously misclassified instances, creating a strong learner from multiple weak learners. This approach can capture complex patterns in volatile cryptocurrency markets.
+
+### XGBoost Predictions
+![XGBoost BTC Price Predictions](output/prediction/xgboost.png)
+
+XGBoost is an optimized gradient boosting framework that provides excellent performance through regularization and efficient tree construction. It's particularly well-suited for financial time series prediction.
+
+### Stacking Regressor Predictions
+![Stacking Regressor BTC Price Predictions](output/prediction/stacking.png)
+
+Stacking uses a meta-learner to combine predictions from multiple base models. This sophisticated approach can capture complex interactions between different algorithms and often achieves superior predictive performance.
+
+### Voting Regressor Predictions
+![Voting Regressor BTC Price Predictions](output/prediction/voting_regressor.png)
+
+Voting combines predictions from multiple models through weighted or unweighted averaging. This simple yet effective method leverages the collective wisdom of different algorithms to make more robust predictions.
+
+---
+
+*These prediction visualizations demonstrate the practical application of ensemble methods in cryptocurrency price forecasting, showing how different approaches capture market patterns and make predictions over time.*
+
+## 📊 Ensemble Method Visualizations
+
+This project also generates comprehensive visualizations that explain the core concepts behind different ensemble learning methods. Below are the key visualizations created by the `Ensembled_plots.py` script:
+
+### Bagging (Bootstrap Aggregating)
+![Bagging Ensemble Method](output/bagging_plot.png)
+
+**Bagging** creates multiple models by training on different bootstrap samples of the original dataset. Each model is trained independently, and their predictions are combined through averaging or voting. This approach reduces variance and helps prevent overfitting by leveraging the diversity of multiple models trained on different data subsets.
+
+### Boosting (Sequential Learning)
+![Boosting Ensemble Method](output/boosting_plot.png)
+
+**Boosting** trains models sequentially, where each subsequent model focuses on correcting the errors made by previous models. This creates a strong learner by combining multiple weak learners, with each model learning from the mistakes of its predecessors. The final prediction is a weighted combination of all models.
+
+### Stacking (Stacked Generalization)
+![Stacking Ensemble Method](output/stacking_plot.png)
+
+**Stacking** uses a meta-learner that combines predictions from multiple base models. The base models are trained on the original dataset, and their predictions become input features for the meta-learner. This approach can capture complex interactions between different algorithms and often achieves superior performance through sophisticated model combination.
+
+### Voting (Ensemble Decision Making)
+![Voting Ensemble Method](output/voting_plot.png)
+
+**Voting** combines predictions from multiple models through a democratic process. Models can contribute equally (hard voting) or with different weights (soft voting) based on their individual performance. This simple yet effective method leverages the collective wisdom of multiple algorithms to make more robust predictions.
+
+---
+
+*These visualizations demonstrate the fundamental differences between ensemble approaches and help understand how each method combines multiple models to achieve better predictive performance than any single model could accomplish alone.*
+
 ## 📁 Project Structure
 
 ```

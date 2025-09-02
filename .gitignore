@@ -15,8 +15,6 @@ build/
 *.egg-info/
 
 # Generated plots and output directory
-*.png
-output/
 
 # Jupyter Notebook
 .ipynb_checkpoints
