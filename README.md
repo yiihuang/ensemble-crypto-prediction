@@ -18,6 +18,23 @@ The implementation includes rigorous hyperparameter tuning, feature importance a
 
 Beyond the predictive models themselves, this repository serves as a comprehensive tutorial on implementing ensemble learning techniques in Python, with visualizations that explain the core concepts behind different ensemble approaches.
 
+## 🎯 Model Performance Results
+
+The ensemble models were evaluated using Mean Absolute Percentage Error (MAPE) on Bitcoin price prediction:
+
+**Performance Ranking (Best to Worst):**
+1. **Random Forest: 0.97% MAPE** 🥇
+2. **XGBoost: 1.22% MAPE** 🥈  
+3. **Stacking Regressor: 1.48% MAPE** 🥉
+4. **Voting Regressor: 1.59% MAPE**
+5. **AdaBoost: 2.11% MAPE**
+
+All models achieve MAPE < 2.5%, demonstrating strong predictive performance for cryptocurrency price forecasting.
+
+![MAPE Comparison Chart](output/mape.png)
+
+*Visual comparison of Mean Absolute Percentage Error (MAPE) across all ensemble methods, showing Random Forest's superior performance.*
+
 ## 📈 Model Performance Visualizations
 
 The following visualizations demonstrate how well each ensemble method performs in predicting Bitcoin prices. These plots show the true BTC prices (blue line) versus the predicted prices (dashed lines) over time, allowing you to visually assess the accuracy and performance of each ensemble approach.
