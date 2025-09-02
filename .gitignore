@@ -1,0 +1,38 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+ENV/
+.env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Generated plots and output directory
+*.png
+output/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+.jupyter/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Cache directories
+.ruff_cache/
+
+# Logs
+*.log
